@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "WEBCAT lib test",
+  "version": "1.0.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "webcat-lib-test@freedom.press"
+    }
+  },
+  "permissions": [
+    "alarms",
+    "browsingData",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "webRequestFilterResponse.serviceWorkerScript",
+    "storage",
+    "unlimitedStorage",
+    "tabs",
+    "scripting",
+    "<all_urls>"
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'none';",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true,
+    "type": "module"
+  },
+  "page_action": {
+    "default_icon": {
+      "48": "webcat/icons/light/webcat.SVG",
+      "128": "webcat/icons/light/webcat.SVG"
+    },
+    "default_title": "WEBCAT"
+  }
+}

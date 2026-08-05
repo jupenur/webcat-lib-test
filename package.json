@@ -1,0 +1,23 @@
+{
+  "name": "webcat-lib-test",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "background.ts",
+  "scripts": {
+    "build": "rm -rf ./dist && vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^143.0.0",
+    "@types/node": "^26.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.0",
+    "vite-plugin-zip-pack": "^1.2.4"
+  },
+  "dependencies": {
+    "webcat": "file:../webcat/extension/webcat-2.7.1.tgz"
+  }
+}
