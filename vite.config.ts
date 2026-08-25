@@ -9,6 +9,7 @@ export default defineConfig({
     async generateBundle() {
       const files = [
         "./manifest.json",
+        "webcat/hooks/content.js",
         "webcat/data/block.json",
         "webcat/data/list.json",
         "webcat/icons/dark/webcat.SVG",
